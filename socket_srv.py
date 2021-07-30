@@ -135,8 +135,6 @@ class TCPLINK_TEST():
                 p17.value(0) 
                 p16.value(0) 
 
-            else:
-                print("error!")
 
             # if recvDict == "1":
             #     p2.value(1)
