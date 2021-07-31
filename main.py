@@ -9,10 +9,6 @@ import _thread
 import json
 import array
 
-global p2
-# GPIO 2
-p2 = Pin(2, Pin.OUT)
-
 WIFI_TEST.do_connect()
 
 global p0
@@ -60,4 +56,4 @@ tcplink = TCPLINK_TEST()
 tcplink.do_tcplink()
 
 # 连接蓝牙
-do_blutooth()
+# do_blutooth()
