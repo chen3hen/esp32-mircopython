@@ -1,3 +1,12 @@
+环境搭建
+python3.8.10
+python -m pip install --upgrade pip
+pip install esptool
+
+
+mode		查看COM口
+
+
 ===========================================================
 			windows powershell
 ===========================================================
