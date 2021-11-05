@@ -12,7 +12,7 @@ class WIFI_TEST():
 
         # WiFi账户和密码
         ssid = "test"
-        password = "88888888"
+        password = "zhika888"
 
         # 以工作站 (station) 模式运行，需要创建一个工作站Wi-Fi接口的实例
         # 工作站模式（ESP32连接到路由器）， AP模式提供接入服务（其他设备连接到ESP32）。
@@ -23,6 +23,7 @@ class WIFI_TEST():
             sta_if.active(True)
             # 使用connect方法连接到Wi-Fi网络。该方法以SSID（网络名称）和密码作为输入值
             sta_if.connect(ssid, password)
+            sta_if.ifconfig(('192.168.7.188', '255.255.255.0', '192.168.7.1', '114.114.114.114'))
             while not sta_if.isconnected():
                 utime.sleep(1)
                 print('   connecting ...')
