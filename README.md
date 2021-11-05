@@ -29,7 +29,7 @@ pip3 install rshell
 ===========================================================
 
 
-rshell --buffer-size 512 --editor C:\WINDOWS\system32\notepad.exe -p COM3
+rshell --buffer-size 512 --editor C:\WINDOWS\system32\notepad.exe -p COM5
 
 
 ===========================================================
@@ -39,11 +39,12 @@ edit /pyboard/boot.py
 新建main.py
 
 cp boot.py /pyboard/boot.py
+
 cp main.py /pyboard/main.py
 cp bluetooth_mould.py /pyboard/bluetooth_mould.py
 cp wificonnect.py /pyboard/wificonnect.py
 cp socket_srv.py /pyboard/socket_srv.py
-cp dht22.py /pyboard/dht22.py
+cp dht11.py /pyboard/dht11.py
 cp update_time.py /pyboard/update_time.py
 
 rm /pyboard/main.py	删除指定文件
