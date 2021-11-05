@@ -1,7 +1,7 @@
 from wificonnect import WIFI_TEST
 from dht11 import *
 from socket_srv import TCPLINK_TEST
-from bluetooth_mould import *
+# from bluetooth_mould import *
 from machine import Pin
 
 import socket
